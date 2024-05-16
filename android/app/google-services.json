@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "140737599226",
+    "firebase_url": "https://rent-black-car-default-rtdb.firebaseio.com",
+    "project_id": "rent-black-car",
+    "storage_bucket": "rent-black-car.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140737599226:android:2777c94d21f6642e509b43",
+        "android_client_info": {
+          "package_name": "stg.rent.car.gulshan.rent_a_car"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsketKMZ7hnbcoFa-D3i_dM0B_P6DFS6E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
