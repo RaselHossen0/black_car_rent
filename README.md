@@ -29,7 +29,8 @@ Black Car Rent & Servicing is a Flutter-based mobile application that offers pre
 
 ## Screenshots
 
-*Include screenshots of the app here to give users a visual overview.*
+![Simulator Screenshot - iPhone 15 Pro - 2024-05-13 at 00 33 56](https://github.com/RaselHossen0/black_car_rent/assets/102950940/3a850d04-c32f-49a6-8553-d50a92897fea)
+
 
 ## Installation
 
