@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:rent_a_car/main.dart';
 import 'package:url_launcher/url_launcher.dart';
+
+import 'View/BottomNavigationState.dart';
 
 class HomePage1 extends StatefulWidget {
   const HomePage1({super.key});
@@ -20,9 +21,9 @@ class _HomePageState extends State<HomePage1> {
       statusBarIconBrightness:
           Brightness.dark, // Brightness of status bar icons
     ));
-    Future.delayed(Duration(seconds: 2), () {
-      Navigator.push(
-          context, MaterialPageRoute(builder: (context) => AuthWrapper()));
+    Future.delayed(Duration(seconds: 4), () {
+      Navigator.push(context,
+          MaterialPageRoute(builder: (context) => BottomNavigationState()));
     });
   }
 
@@ -96,8 +97,10 @@ class _HomePageState extends State<HomePage1> {
               child: InkWell(
                 onTap: () {
                   print('Continue');
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => AuthWrapper()));
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => BottomNavigationState()));
                 },
                 child: Container(
                   width: wi * 0.74,

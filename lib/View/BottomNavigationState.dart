@@ -3,7 +3,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:rent_a_car/screens/MainScreen.dart';
-import 'package:rent_a_car/screens/home_screen.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../screens/findCost.dart';
@@ -36,7 +35,7 @@ class _BottomNavigationStateState extends State<BottomNavigationState> {
           CupertinoIcons.phone_circle_fill,
           // Icons.reviews_outlined,
           Icons.car_crash,
-          Icons.person_2_outlined,
+          // Icons.person_2_outlined,
         ],
         height: 60,
         gapWidth: 2,
@@ -61,9 +60,9 @@ class _BottomNavigationStateState extends State<BottomNavigationState> {
           // if (currentIndex == 2) {
           //   screen = ReviewPage();
           // }
-          if (currentIndex == 3) {
-            screen = HomeScreen();
-          }
+          // if (currentIndex == 3) {
+          //   screen = HomeScreen();
+          // }
           // else if (currentIndex == 1) {
           //   screen = const SearchUser();
           // } else if (currentIndex == 3) {

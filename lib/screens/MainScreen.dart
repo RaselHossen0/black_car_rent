@@ -120,22 +120,24 @@ class _MainScreenState extends State<MainScreen> {
       statusBarIconBrightness:
           Brightness.dark, // Brightness of status bar icons
     ));
-    dbRef.onValue.listen((event) {
-      final data = Map<dynamic, dynamic>.from(event.snapshot.value as Map);
-      setState(() {
-        services = data;
+    if (mounted)
+      dbRef.onValue.listen((event) {
+        final data = Map<dynamic, dynamic>.from(event.snapshot.value as Map);
+        setState(() {
+          services = data;
+        });
       });
-    });
-    dbRef1.onValue.listen((event) {
-      final data = Map<dynamic, dynamic>.from(event.snapshot.value as Map);
-      final tempCars = <Car>[];
-      data.forEach((key, value) {
-        tempCars.add(Car.fromJson(Map<dynamic, dynamic>.from(value)));
+    if (mounted)
+      dbRef1.onValue.listen((event) {
+        final data = Map<dynamic, dynamic>.from(event.snapshot.value as Map);
+        final tempCars = <Car>[];
+        data.forEach((key, value) {
+          tempCars.add(Car.fromJson(Map<dynamic, dynamic>.from(value)));
+        });
+        setState(() {
+          cars = tempCars;
+        });
       });
-      setState(() {
-        cars = tempCars;
-      });
-    });
   }
 
   @override
